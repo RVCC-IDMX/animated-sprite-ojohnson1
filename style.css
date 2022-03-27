@@ -1,0 +1,42 @@
+.moon {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #d8d8d8;
+  box-shadow: inset 15px 15px 10px #999;
+}
+
+.boxman {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: transparent url("boxman2.png") 0 0 no-repeat;
+  width: 230px;
+  height: 193px;
+  transform: translate(-50%, -50%);
+  margin: 2em auto;
+  animation: jump 1s steps(21) infinite;
+}
+@keyframes jump {
+  100% {
+    background-position: -4830px, 0;
+  }
+}
+
+p.loading {
+  width: 100%;
+  height: 10px;
+  font-family: "monospace";
+  position: absolute;
+  left: 0;
+  top: 500px;
+  color: #4c4c4c;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #737373;
+  text-align: center;
+}
